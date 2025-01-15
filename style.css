@@ -1,0 +1,196 @@
+div {
+    border-color: black;
+    border-style: solid;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+}
+
+.sidebar-container {
+    grid-area: 1 / 1 / 4 / 2;
+    background-color: purple;
+    gap: 15px;
+    display: grid;
+}
+
+.logotype-wrapper {
+display: grid;
+grid-template-columns: 1fr 4fr;
+grid-template-rows: 60px;
+align-items: center;
+justify-self: space-between;
+}
+
+h1 {
+    font-size:large;
+    padding: none;
+}
+
+.logo {
+    background-image: url("./icons/barley.png");
+    height: 25px; /* You must set a specified height */
+    width: 25px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain;
+}
+
+.navigation {
+    display: grid;
+    gap: 10px;
+}
+
+.nav-list {
+    display: grid;
+}
+
+.nav-list-item {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    justify-self: space-between;
+    font-size: small;
+}
+
+.link-icons {
+    justify-items: end;
+    display: grid;
+}
+
+.nav-list-item .div {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+}
+
+.topbar-container {
+    grid-area: 1 / 2 / 2 / 5;
+    background-color: green;
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 1fr 3fr;
+}
+
+.topbar-top {
+    grid-area: 1 / 1 / 2 / 3; 
+    display:grid;
+    grid-template-columns: 4fr 2fr;
+    align-items: center;
+}
+
+.searchbar {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 20px 1fr;
+    grid-template-rows: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar div {
+    display: grid;
+    justify-items: start;
+    align-items: center;
+}
+
+.searchbar input {
+    border-radius: 18px;
+}
+
+.search-submit {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 30px 1fr 2fr;
+    align-items: center;
+}
+
+.profile-container div {
+    display: grid;
+    align-items: center;
+    justify-self: center;
+}
+
+.topbar-bottom {
+    grid-area: 2 / 1 / 3 / 3;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+
+.greeting-wrapper {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-column-gap: 5px;
+}
+
+.profile-photo {
+    grid-area: 1 / 1 / 3 / 2;
+    display: grid;
+    width: 50px;
+    height: 50px;
+}
+
+.profile-photo img{
+    border-radius: 50%;
+}
+
+.greeting-text {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.greeting-name {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.top-bar-buttons-wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 5px;
+}
+
+.project-cards-container {
+    grid-area: 2 / 2 / 4 / 4;
+    background-color: grey;
+}
+
+.title {
+    padding-left: 10px;
+}
+
+.project-cards-container {
+    display: grid;
+    grid-template-rows: 25px 1fr;
+}
+
+.cards-wrapper {
+    display: grid;
+    gap: 25px;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+.announcements-container {
+    grid-area: 2 / 4 / 3 / 5;
+    background-color: blueviolet;
+}
+
+.trending-conatiner {
+    grid-area: 3 / 4 / 4 /5;
+    background-color: orange;
+}
