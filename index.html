@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <title>Document</title>
 </head>
 <body>
@@ -11,47 +12,49 @@
         <div class="sidebar-container">
             <div class="logotype-wrapper">
                 <div class="logo"></div>
-                <div class="type"><h1>Dashboard</h1></div>
+                <div class="type"><h1>Animator</h1></div>
             </div>
             <div class="navigation">
                 <div class="nav-list">
                     <div class="nav-list-item">
                         <div class="link-icons"><img src="./icons/home.png" width="15px" height="auto"></div>
-                        <div>Home</div>
+                        <div><a href="./home">Home</a></div>
                     </div>
                     <div class="nav-list-item">
                         <div class="link-icons"><img src="./icons/profile.png" width="15px" height="auto"></div>
-                        <div>Profile</div>
+                        <div><a href="./profile">Profile</a></div>
                     </div>
                     <div class="nav-list-item">
                         <div class="link-icons"><img src="./icons/messages.png" width="15px" height="auto"></div>
-                        <div>Messages</div>
+                        <div><a href="./messages">Messages</a></div>
                     </div>
                     <div class="nav-list-item">
                         <div class="link-icons"><img src="./icons/history.png" width="15px" height="auto"></div>
-                        <div>History</div>
+                        <div><a herf="history">History</a></div>
                     </div>
                     <div class="nav-list-item">
                         <div class="link-icons"><img src="./icons/tasks.png" width="15px" height="auto"></div>
-                        <div>Tasks</div>
+                        <div><a href="./tasks">Tasks</a></div>
                     </div>
                     <div class="nav-list-item">
                         <div class="link-icons"><img src="./icons/communities.png" width="15px" height="auto"></div>
-                        <div>Communities</div>
+                        <div><a href="./communities">Communities</a></div>
                     </div>
                 </div>
+            </div>
+            <div class="navigation">
                 <div class="nav-list">
                     <div class="nav-list-item">
                         <div class="link-icons"><img src="./icons/settings.png" width="15px" height="auto"></div>
-                        <div>Settings</div>
+                        <div><a href="./settings">Settings</a></div>
                     </div>
                     <div class="nav-list-item">
                         <div class="link-icons"><img src="./icons/support.png" width="15px" height="auto"></div>
-                        <div>Support</div>
+                        <div><a href="./support">Support</a></div>
                     </div>
                     <div class="nav-list-item">
                         <div class="link-icons"><img src="./icons/privacy.png" width="15px" height="auto"></div>
-                        <div>Privacy</div>
+                        <div><a href="./privacy">Privacy</a></div>
                     </div>
                 </div>
             </div>
@@ -59,36 +62,31 @@
         <div class="topbar-container">
             <div class="topbar-top">
                 <div class="searchbar">
-                    <div>
+                    <div class="search-button">
                         <button type="submit" form="search-input" class="search-submit">
                             <img src="./icons/search.png" width="15px" height="15px">
                         </button>
                     </div>
-                    <div>
-                        <form action="example.com/path" method="post" id="search-input">
-                        <input type="text" id="search-query" name="search-query">
+                        <form class="searchform" action="example.com/path" method="post" id="search-input">
+                        <input class ="searchquery" type="text" id="search-query" name="search-query">
                         </form>
-                    </div>
                 </div>
                 <div class="profile-container">
-                    <div>
-                            <img src="./icons/bell.png" width="15px" height="15px">
-                    </div>
-                    <div>
-                        <img class="profile" src="./images/profilephoto.jpg">
-                    </div>
-                    <div>
-                        <p>Nami Chan</p>
-                    </div>
+                    <img src="./icons/bell.png" width="15px" height="15px">
+                    <img class="profile" src="./images/profilephoto.jpg">
+                    <p><b>Minami Kaoru</b></p>
+
                 </div>
             </div>
             <div class="topbar-bottom">
                 <div class="greeting-wrapper">
                     <div class="profile-photo">
-                        <img src="./images/profilephoto.jpg" width="50px">
+                        <img src="./images/profilephoto.jpg" width="60px">
                     </div>
-                    <div class="greeting-text">Hi there,</div>
-                    <div class="greeting-name">Nami Chan (@Nami33)</div>
+                    <div class="greeting-text-wrapper">
+                        <div class="greeting-text">Hi there,</div>
+                        <div class="greeting-name">Minami Kaoru (@nami)</div>
+                    </div>
                 </div>
                 <div class="top-bar-buttons-wrapper">
                     <button class="action">New</button>
@@ -101,33 +99,102 @@
             <div class="title">Your Projects</div>
             <div class="cards-wrapper">
                 <div class="cards-item">
-                    <h4>Super Cool Project</h4>
-                    <p>This project is about the power of supercool momonosuke. Try it on for a change and feel the difference</p>
+                    <div>
+                        <h4>My Neighbour Totoro</h4>
+                        <p>A heartwarming 1988 animated film by Studio Ghibli. It follows two sisters who meet a magical forest spirit named Totoro. Through their adventures...</p>
+                    </div>
+                    <div class="cards-item-logos">
+                        <img class="clickable" src="./icons/axe-battle.svg">
+                        <img class="clickable" src="./icons/rabbit-variant.svg">
+                        <img class="clickable" src="./icons/folder-edit-outline.svg">
+                    </div>
                 </div>
                 <div class="cards-item">
-                    <h4>Super Cool Project</h4>
-                    <p>This project is about the power of supercool momonosuke. Try it on for a change and feel the difference</p>
+                    <div>
+                        <h4>Spirited Away</h4>
+                        <p>Spirited Away is a magical story about a young girl named Chihiro who becomes trapped in a mystical, spirit-filled world while trying to save her parents. Through her journey...</p>
+                    </div>
+                    <div class="cards-item-logos">
+                        <img class="clickable" src="./icons/axe-battle.svg">
+                        <img class="clickable" src="./icons/rabbit-variant.svg">
+                        <img class="clickable" src="./icons/folder-edit-outline.svg">
+                    </div>
                 </div>
                 <div class="cards-item">
-                    <h4>Super Cool Project</h4>
-                    <p>This project is about the power of supercool momonosuke. Try it on for a change and feel the difference</p>
+                    <div>
+                        <h4>Ponyo</h4>
+                        <p>A story of a goldfish named Ponyo who longs to become human after befriending a boy named Sosuke. The film explores them...</p>
+                    </div>
+                    <div class="cards-item-logos">
+                        <img class="clickable" src="./icons/axe-battle.svg">
+                        <img class="clickable" src="./icons/rabbit-variant.svg">
+                        <img class="clickable" src="./icons/folder-edit-outline.svg">
+                    </div>
                 </div>
                 <div class="cards-item">
-                    <h4>Super Cool Project</h4>
-                    <p>This project is about the power of supercool momonosuke. Try it on for a change and feel the difference</p>
+                    <div>
+                        <h4>The Boy and the Heron</h4>
+                        <p>A captivating story about a young boy who befriends a mysterious heron. As they embark on a fantastical journey...</p>
+                    </div>
+                    <div class="cards-item-logos">
+                        <img class="clickable" src="./icons/axe-battle.svg">
+                        <img class="clickable" src="./icons/rabbit-variant.svg">
+                        <img class="clickable" src="./icons/folder-edit-outline.svg">
+                    </div>
                 </div>
                 <div class="cards-item">
-                    <h4>Super Cool Project</h4>
-                    <p>This project is about the power of supercool momonosuke. Try it on for a change and feel the difference</p>
-                </div>
+                    <div>
+                        <h4>Princess Mononoke</h4>
+                        <p>An epic tale set in a mystical forest where humans and spirits struggle for coexistence. The story follows Ashitaka, a young warrior, and San, a girl raised by wolves, as they navigate the conflict between nature...</p>
+                    </div>
+                    <div class="cards-item-logos">
+                        <img class="clickable" src="./icons/axe-battle.svg">
+                        <img class="clickable" src="./icons/rabbit-variant.svg">
+                        <img class="clickable" src="./icons/folder-edit-outline.svg">
+                    </div>
+                </div> 
                 <div class="cards-item">
-                    <h4>Super Cool Project</h4>
-                    <p>This project is about the power of supercool momonosuke. Try it on for a change and feel the difference</p>
+                    <div>
+                        <h4>Kiki's Delivery Service</h4>
+                        <p>A heartwarming tale about a young witch named Kiki who moves to a new town to complete her training. With her trusty black cat, Jiji...</p>
+                    </div>
+                    <div class="cards-item-logos">
+                        <img class="clickable" src="./icons/axe-battle.svg">
+                        <img class="clickable" src="./icons/rabbit-variant.svg">
+                        <img class="clickable" src="./icons/folder-edit-outline.svg">
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="announcements-container">
+            <div class="title">Announcements</div>
+            <div class="items-card">
+                <div class="update"><b>Site Maintenance</b><br>We are scheduling a site wide maintenance on 24 January 3021. Please take note to save your work...</div>
+                <div class="update"><b>Community Share Day</b><br>Community share day will take place every wednesday until the last wednesday of the year...</div>
+                <div id="update-last"><b>Updated Privacy Policy</b><br>Under the new updated Prviacy Policy, you will no longer own any data that is uploaded onto this site...</div>
+            </div>
+        </div>
+        <div class="trending">
+            <div class="title">Trending</div>
+            <div class="items-card">
+                <div class="item">
+                    <div class="user-photo"><img src="./images/mononosuke.jpg"></div>
+                    <div class="user-info"><b>@Mononosuke</b><br>Dragon Fruit User</div>
+                </div>
+                <div class="item">
+                    <div class="user-photo"><img src="./images/troy.jpeg"></div>
+                    <div class="user-info"><b>@Troy</b><br>The greatest showman</div>
+                </div>
+                <div class="item">
+                    <div class="user-photo"><img src="./images/penelope.jpeg"></div>
+                    <div class="user-info"><b>@Penelope</b><br>Painter genius watercolor</div>
+                </div>
+                <div class="item">
+                    <div class="user-photo"><img src="./images/photo2.jpeg"></div>
+                    <div class="user-info"><b>@Heidi</b><br>Nature's best friend</div>
                 </div>
             </div>
         </div>
-        <div class="announcements-container"></div>
-        <div class="trending-container"></div>
     </div>
 </body>
 </html>
